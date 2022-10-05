@@ -214,39 +214,42 @@ class _HomeState extends State<Home> {
       backgroundColor: tdBGColor,
       elevation: 0,
       title: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           //3bar button..
-          Icon(
-            Icons.menu,
-            color: tdBlack,
-            size: 30,
-          ),
+          // Icon(
+          //   Icons.menu,
+          //   color: tdBlack,
+          //   size: 30,
+          // ),
           //text/title1..
           Text(
             "Task Buddy",
             style: new TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 30,
-                foreground: Paint()
-                  ..shader = LinearGradient(
-                    colors: <Color>[
-                      Color.fromARGB(255, 9, 2, 70),
-                      Color.fromARGB(0xFF, 0x73, 0x03, 0xc0),
-                      Color.fromARGB(0xFF, 0xec, 0x38, 0xbc),
-                      //add more color here. #03001e, #7303c0, #ec38bc, #fdeff9
-                    ],
-                  ).createShader(Rect.fromLTWH(100.0, 100.0, 150.0, 0.0))),
-          ),
-          //image..
-          Container(
-            height: 40,
-            width: 40,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(20),
-              child: Image.asset('assets/images/me.jpeg'),
+              fontWeight: FontWeight.bold,
+              fontSize: 30,
+              foreground: Paint()
+                ..shader = LinearGradient(
+                  colors: <Color>[
+                    Color.fromARGB(255, 9, 2, 70),
+                    Color.fromARGB(0xFF, 0x73, 0x03, 0xc0),
+                    Color.fromARGB(0xFF, 0xec, 0x38, 0xbc),
+                    //add more color here. #03001e, #7303c0, #ec38bc, #fdeff9
+                  ],
+                ).createShader(
+                  Rect.fromLTWH(132.0, 100.0, 150.0, 0.0),
+                ),
             ),
           ),
+          //image..
+          // Container(
+          //   height: 40,
+          //   width: 40,
+          //   child: ClipRRect(
+          //     borderRadius: BorderRadius.circular(20),
+          //     child: Image.asset('assets/images/me.jpeg'),
+          //   ),
+          // ),
         ],
       ),
     );
